@@ -42,7 +42,7 @@ namespace Kosciuszko
 
         private void pictureClose_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureClose.BackColor = Color.Red;
+            pictureClose.BackColor = Color.FromArgb(150, 70, 70, 70);
         }
 
         private void pictureClose_MouseLeave(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace Kosciuszko
 
         private void pictureMinimize_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureMinimize.BackColor = Color.Red;
+            pictureMinimize.BackColor = Color.FromArgb(150, 70, 70, 70);
         }
 
         private void pictureMinimize_MouseLeave(object sender, EventArgs e)
@@ -68,6 +68,30 @@ namespace Kosciuszko
         private void pictureMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureWindowState_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureWindowState.BackColor = Color.FromArgb(150, 70, 70, 70);
+        }
+
+        private void pictureWindowState_MouseLeave(object sender, EventArgs e)
+        {
+            pictureWindowState.BackColor = Color.Transparent;
+        }
+
+        private void pictureWindowState_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                pictureWindowState.Image = Image.FromFile(@"../../Resources/ButtonMaximize.png");
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                pictureWindowState.Image = Image.FromFile(@"../../Resources/ButtonRestore.png");
+            }
         }
     }
 }
