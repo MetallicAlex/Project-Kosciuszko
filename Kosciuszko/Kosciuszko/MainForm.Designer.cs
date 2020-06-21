@@ -48,7 +48,7 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(782, 32);
+            this.panelHeader.Size = new System.Drawing.Size(800, 32);
             this.panelHeader.TabIndex = 0;
             this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
             this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
@@ -59,7 +59,7 @@
             this.pictureMinimize.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pictureMinimize.Image")));
             this.pictureMinimize.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureMinimize.InitialImage")));
-            this.pictureMinimize.Location = new System.Drawing.Point(686, 0);
+            this.pictureMinimize.Location = new System.Drawing.Point(704, 0);
             this.pictureMinimize.Name = "pictureMinimize";
             this.pictureMinimize.Size = new System.Drawing.Size(32, 32);
             this.pictureMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             this.pictureWindowState.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureWindowState.Image = ((System.Drawing.Image)(resources.GetObject("pictureWindowState.Image")));
             this.pictureWindowState.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureWindowState.InitialImage")));
-            this.pictureWindowState.Location = new System.Drawing.Point(718, 0);
+            this.pictureWindowState.Location = new System.Drawing.Point(736, 0);
             this.pictureWindowState.Name = "pictureWindowState";
             this.pictureWindowState.Size = new System.Drawing.Size(32, 32);
             this.pictureWindowState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +89,7 @@
             this.pictureClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureClose.Image")));
             this.pictureClose.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureClose.InitialImage")));
-            this.pictureClose.Location = new System.Drawing.Point(750, 0);
+            this.pictureClose.Location = new System.Drawing.Point(768, 0);
             this.pictureClose.Name = "pictureClose";
             this.pictureClose.Size = new System.Drawing.Size(32, 32);
             this.pictureClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,11 +107,14 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panelHeader);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kosciuszko";
             this.panelHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimize)).EndInit();
